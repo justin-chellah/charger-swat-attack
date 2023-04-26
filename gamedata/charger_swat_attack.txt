@@ -1,0 +1,58 @@
+"Games"
+{
+	"left4dead2"
+	{
+		"Offsets"
+		{
+			"CCharge::m_bHitSurvivors"
+			{
+				"windows"	"1160"
+				"linux"		"1180"
+			}
+
+			"CTerrorPlayer::m_animState"
+			{
+				"windows"	"10524"
+				"linux"		"10512"
+			}
+
+			// Vtable indices
+			"CBaseAbility::HandleCustomCollision"
+			{
+				"windows"	"225"
+				"linux"		"226"
+			}
+
+			"CBaseAnimating::SelectWeightedSequence"
+			{
+				"windows"	"207"
+				"linux"		"208"
+			}
+
+			"CCSPlayer::DoAnimationEvent"
+			{
+				"windows"	"510"
+				"linux"		"511"
+			}
+		}
+
+		"Signatures"
+		{
+			"CMultiPlayerAnimState::IsGestureSlotPlaying"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8B\x45\x08\x8B\x49\x08\x8D\x04\x40\x80\x7C\xC1\x0A\x00"
+				// 55 8B EC 8B 45 08 8B 49 08 8D 04 40 80 7C C1 0A 00
+				"linux"		"@_ZN21CMultiPlayerAnimState20IsGestureSlotPlayingEi8Activity"
+			}
+
+			"ThrowImpactedSurvivor"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x78\x53\x56\x57\x8B\x7D\x08"
+				// 55 8B EC 83 EC 78 53 56 57 8B 7D 08
+				"linux"		"@_Z21ThrowImpactedSurvivorP13CTerrorPlayerS0_fb"
+			}
+		}
+	}
+}
